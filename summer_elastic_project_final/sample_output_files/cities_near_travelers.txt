@@ -1,0 +1,212 @@
+
+
+Best Cities by Cloud Percentage: 
+Wilbraham  ,  US
+Scott Corners  ,  US
+Windham County  ,  US
+Hampden County  ,  US
+Hollis  ,  US
+Moorhouse Corner  ,  US
+South Westerlo  ,  US
+Stoodley Corners  ,  US
+Hales Crossing  ,  US
+South Gilboa Station  ,  US
+Brookside  ,  US
+Rensselaer County  ,  US
+Beechwood Estates  ,  US
+Stratton  ,  US
+Emmons  ,  US
+Vermont  ,  US
+Windsor County  ,  US
+Paradise Beach  ,  US
+Enfield  ,  US
+Onchiota  ,  US
+East Floyd  ,  US
+Rutland  ,  US
+Bread Loaf  ,  US
+Herkimer County  ,  US
+Crum Town  ,  US
+New Ireland  ,  US
+Monroeton  ,  US
+Chittenden County  ,  US
+Gloversville  ,  US
+Unadilla Center  ,  US
+Sages Crossing  ,  US
+Newville  ,  US
+Cortland County  ,  US
+Perry Mills  ,  US
+Air City  ,  US
+Columbia County  ,  US
+Simpsonville  ,  US
+Elmira  ,  US
+Canoga Springs  ,  US
+Sainte-Catherine  ,  CA
+Tanglewood Estates  ,  US
+Lachine  ,  CA
+Candiac  ,  CA
+Seneca County  ,  US
+Westminster  ,  US
+West Cameron  ,  US
+Indiana County  ,  US
+Wayne County  ,  US
+Cayuga County  ,  US
+Rome  ,  US
+
+
+Best Cities by Temperature: 
+Vermont  ,  US
+Windsor County  ,  US
+West Cameron  ,  US
+Onchiota  ,  US
+Rutland  ,  US
+Bread Loaf  ,  US
+Chittenden County  ,  US
+Beechwood Estates  ,  US
+Rensselaer County  ,  US
+Stratton  ,  US
+Hales Crossing  ,  US
+South Gilboa Station  ,  US
+Gloversville  ,  US
+Emmons  ,  US
+Hollis  ,  US
+Elmira  ,  US
+Cortland County  ,  US
+Unadilla Center  ,  US
+Sages Crossing  ,  US
+Canoga Springs  ,  US
+East Floyd  ,  US
+Herkimer County  ,  US
+Hampden County  ,  US
+Sainte-Catherine  ,  CA
+Indiana County  ,  US
+Scott Corners  ,  US
+Wilbraham  ,  US
+New Ireland  ,  US
+Windham County  ,  US
+Wayne County  ,  US
+Crum Town  ,  US
+Air City  ,  US
+Paradise Beach  ,  US
+Monroeton  ,  US
+Perry Mills  ,  US
+Cayuga County  ,  US
+Lachine  ,  CA
+Stoodley Corners  ,  US
+Moorhouse Corner  ,  US
+Candiac  ,  CA
+South Westerlo  ,  US
+Seneca County  ,  US
+Newville  ,  US
+Brookside  ,  US
+Westminster  ,  US
+Rome  ,  US
+Enfield  ,  US
+Simpsonville  ,  US
+Tanglewood Estates  ,  US
+Columbia County  ,  US
+
+
+Best Cities by Humidity Percentage: 
+Westminster  ,  US
+Tanglewood Estates  ,  US
+Seneca County  ,  US
+Columbia County  ,  US
+Simpsonville  ,  US
+Air City  ,  US
+Unadilla Center  ,  US
+Sages Crossing  ,  US
+Rome  ,  US
+East Floyd  ,  US
+Crum Town  ,  US
+New Ireland  ,  US
+Monroeton  ,  US
+Cortland County  ,  US
+Herkimer County  ,  US
+Newville  ,  US
+Onchiota  ,  US
+Perry Mills  ,  US
+Indiana County  ,  US
+Gloversville  ,  US
+Elmira  ,  US
+Lachine  ,  CA
+Canoga Springs  ,  US
+Candiac  ,  CA
+Emmons  ,  US
+Paradise Beach  ,  US
+Moorhouse Corner  ,  US
+South Westerlo  ,  US
+West Cameron  ,  US
+Cayuga County  ,  US
+Stoodley Corners  ,  US
+Chittenden County  ,  US
+South Gilboa Station  ,  US
+Sainte-Catherine  ,  CA
+Vermont  ,  US
+Enfield  ,  US
+Rutland  ,  US
+Bread Loaf  ,  US
+Rensselaer County  ,  US
+Beechwood Estates  ,  US
+Stratton  ,  US
+Windsor County  ,  US
+Wayne County  ,  US
+Wilbraham  ,  US
+Scott Corners  ,  US
+Windham County  ,  US
+Hampden County  ,  US
+Hales Crossing  ,  US
+Brookside  ,  US
+Hollis  ,  US
+
+
+Best Cities by Wind Speed: 
+Brookside  ,  US
+Enfield  ,  US
+Tanglewood Estates  ,  US
+Sainte-Catherine  ,  CA
+Windham County  ,  US
+Wilbraham  ,  US
+Scott Corners  ,  US
+Hampden County  ,  US
+Lachine  ,  CA
+Candiac  ,  CA
+Hollis  ,  US
+Newville  ,  US
+Hales Crossing  ,  US
+Westminster  ,  US
+Rensselaer County  ,  US
+Beechwood Estates  ,  US
+Moorhouse Corner  ,  US
+South Westerlo  ,  US
+Stoodley Corners  ,  US
+Emmons  ,  US
+Unadilla Center  ,  US
+Sages Crossing  ,  US
+Paradise Beach  ,  US
+Seneca County  ,  US
+Gloversville  ,  US
+Stratton  ,  US
+Crum Town  ,  US
+New Ireland  ,  US
+Monroeton  ,  US
+South Gilboa Station  ,  US
+Simpsonville  ,  US
+Cayuga County  ,  US
+East Floyd  ,  US
+Herkimer County  ,  US
+Wayne County  ,  US
+Chittenden County  ,  US
+Vermont  ,  US
+Windsor County  ,  US
+Cortland County  ,  US
+Rutland  ,  US
+Bread Loaf  ,  US
+Elmira  ,  US
+West Cameron  ,  US
+Onchiota  ,  US
+Canoga Springs  ,  US
+Air City  ,  US
+Perry Mills  ,  US
+Columbia County  ,  US
+Indiana County  ,  US
+Rome  ,  US
