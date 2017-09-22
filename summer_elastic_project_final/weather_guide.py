@@ -34,7 +34,6 @@ class WeatherGuide(object):
 		'''
 		try:
 			self.resp = requests.get(url, query)
-			#print self.resp.json()
 		except requests.exceptions.RequestException as error: 
 			print error
 			sys.exit(1)

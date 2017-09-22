@@ -15,22 +15,10 @@ if __name__ == "__main__":
 		tg = TravelGuide(destinations_file, travelers_addresses_file, airport_distance, ' ', ' ', city_preferences_file)
 		common_cities =tg.find_common_cities()
 		nearby_airports = tg.find_airports_near_destinations()
-		# city_resp = common_cities['hits']['hits']
-		# city_list_names = []
-		
-		# for city in range(len(city_resp)):
-		# 	city_list_names.append(city_resp[city]['_source']['name'] + ' , ' + city_resp[city]['_source']['country'])
-			
-
-
-
-
-		#nearby_airports = tg.find_airports_near_destinations()
 
 	elif len(sys.argv) == 7:
 		destinations_file = sys.argv[1]
 		travelers_addresses_file = sys.argv[2]
-		#print travelers_addresses_file
 		avoid_areas_file = sys.argv[3]
 		avoid_distance = sys.argv[4]
 		airport_distance = sys.argv[5]

@@ -125,7 +125,6 @@ class CityAnalyzer(object):
 		resp = {}
 		try:
 			resp = es.search(index = "city_statistics", body = query, request_timeout = 2)
-			#print "Cloud Percentage Response: " + str(resp)
 		except elasticsearch.ElasticsearchException as es1:
 			print es1
 
@@ -135,22 +134,15 @@ class CityAnalyzer(object):
 			addresses.write(resp['hits']['hits'][entry]['_source']['name'] + ' , ' + resp['hits']['hits'][entry]['_source']['country'] + "\n")
 
 
-
-
-
-
-		#print query['query'].keys()
 		
 
 
 		query['query']['function_score']['gauss']['temperature'] = query['query']['function_score']['gauss'].pop('cloud_percentage')
 		query['query']['function_score']['gauss']['temperature']['origin'] = preferred_temperature
-		#print query
 
 		
 
-		print "\n"
-		print "\n"
+		
 
 		'''
 		Best Cities by Temperature
@@ -158,7 +150,6 @@ class CityAnalyzer(object):
 		
 		try:
 			resp = es.search(index = "city_statistics", body = query, request_timeout = 2)
-			#print resp
 		except elasticsearch.ElasticsearchException as es1:
 			print es1
 
@@ -175,15 +166,13 @@ class CityAnalyzer(object):
 
 
 
-		print "\n"
-		print "\n"
+		
 
 		'''
 		Best Cities by Humidity Percentage
 		'''
 		try:
 			resp = es.search(index = "city_statistics", body = query, request_timeout = 2)
-			#print resp
 		except elasticsearch.ElasticsearchException as es1:
 			print es1
 		addresses.write("\n\nBest Cities by Humidity Percentage: \n")
@@ -201,8 +190,7 @@ class CityAnalyzer(object):
 		query['query']['function_score']['gauss']['wind_speed']['origin'] = preferred_wind_speed
 
 
-		print "\n"
-		print "\n"
+	
 
 		'''
 		Best Cities by Wind Speed
@@ -210,7 +198,6 @@ class CityAnalyzer(object):
 
 		try:
 			resp = es.search(index = "city_statistics", body = query, request_timeout = 2)
-			#print resp
 		except elasticsearch.ElasticsearchException as es1:
 			print es1
 		addresses.write("\n\nBest Cities by Wind Speed: \n")

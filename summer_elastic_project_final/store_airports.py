@@ -8,6 +8,8 @@ with open("airports_db.json") as fd:
 	json_data = json.load(fd)
 
 
+#The airport index is created
+#within Elasticsearch
 
 es = Elasticsearch(hosts = ["10.0.2.15"],  http_auth=('elastic', 'changeme'),  port = 9200)
 
@@ -63,7 +65,10 @@ res = es.indices.create(index = "transportation", body =
   }
 }''')
 
-print "Creation of index response: " + str(res)
+
+
+#Documents containing airport 
+#data are indexed into Elasticsearch
 
 entry_num = 1
 for entry, value in json_data.iteritems():
@@ -75,26 +80,10 @@ for entry, value in json_data.iteritems():
  	value['location']['coordinates'] = []
  	value['location']['coordinates'].append(value['lon'])
  	value['location']['coordinates'].append(value['lat'])
- 	#if value['woeid'] != None:
- 	#	value['woeid'] = long(value['woeid'])
- 	#if value['runway_length'] != None:
-	# 	value['runway_length'] = long(value['runway_length'])
 	if value['elevation'] != None:
  		value['elevation'] = long(value['elevation'])
- 	#if value['direct_flights'] != None:
-	#	value['direct_flights'] = long(value['direct_flights'])
-	#if value['carriers'] != None:
- 	#	value['carriers'] = long(value['carriers'])
-
-  	#string_version = json.dumps(value)
-	# out = StringIO.StringIO()
- # 	for line in string_version:
- #   		out.write(line)
-	# data = out.getvalue()
-	#print data
- 	#url = "http://localhost:9200/transportation/station/" + str(value['woeid'])
+ 
  	
  	response = es.index(index = "transportation", doc_type = "station", id = entry_num, body  = value)
- 	#response = requests.put(url, data)
  	print(response)
  	entry_num+=1

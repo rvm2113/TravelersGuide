@@ -75,7 +75,6 @@ class TravelGuide(object):
 		lines = addresses.readlines()
 
 		for x in range(len(lines)):
-			#print lines[x]
 			location = self.geocode(lines[x])
 			if(location != None):
 				search_arr.append({'index': 'transportation', 'type': 'station'})
@@ -133,12 +132,7 @@ class TravelGuide(object):
 				curr_response_parsed = resp['responses'][y]['hits']['hits'][x]['_source']['name'] + ' ' + resp['responses'][y]['hits']['hits'][x]['_source']['city'] 
 				curr_response_parsed +=' ' + resp['responses'][y]['hits']['hits'][x]['_source']['country'] + "\n"
 				airport_file.write(curr_response_parsed)
-			print "\n" 
-
-
-		print "\n"
-		print "\n"
-		print "\n"
+			airport_file.write("\n") 
 		return resp
 	
 
@@ -152,14 +146,12 @@ class TravelGuide(object):
 	#circle geoshape formed 
 	#by each area address to avoid.
 	def find_common_cities(self):
-		print self.travelers_addresses
 		try:
 			addresses = open(self.travelers_addresses, 'r')
 		except IOError:
 			print "Traveler addresses file not provided"
 			return 0
 		lines = addresses.readlines()
-		print lines
 		locations = [[]]
 		first_location = []
 		# Each provided address
@@ -167,13 +159,10 @@ class TravelGuide(object):
 		# of the query
 		for x in range(len(lines)):
 			location = self.geocode(lines[x].rstrip())
-			print location
 			if(x==0):
 				first_location = location
 			locations[0].append(location)
-			print locations
 		locations[0].append(first_location)
-		print locations
 
 
 		#All traveler addresses form a geo_shape
@@ -200,7 +189,6 @@ class TravelGuide(object):
 			avoid_lines = avoid_addresses.readlines()
 			for y in range(len(avoid_lines)):
 				curr_location = self.geocode(avoid_lines[y])
-				#print "CURRENT AVOID LOCATIONS: " + str(curr_location)
 				#each address to avoid(if provided) forms a a geo_shape/circle
 				curr_polygon = {
 			 		"geo_shape": {
@@ -217,8 +205,6 @@ class TravelGuide(object):
 				}
 				all_polygons.append(curr_polygon)
 
-		print "All polygons: " 
-		print "All Polygons: " + str(all_polygons)
 		search_query = 	{
 			"from": 0,
 			"size": 50,
@@ -243,13 +229,11 @@ class TravelGuide(object):
 			resp = es.search(index = "cities", body = search_query, request_timeout = 2)
 		except elasticsearch.ElasticsearchException as es1:
 			print es1
-		#print "RESPONSE: " + str(resp)
 		city_resp = resp['hits']['hits']
 		city_list_names = []
 		
 		for city in range(len(city_resp)):
 			city_list_names.append(city_resp[city]['_source']['name'] + ' , ' + city_resp[city]['_source']['country'])
-		#print "CITY LIST NAMES: " + str(city_list_names)
 
 
 		city_weather = []
@@ -257,7 +241,6 @@ class TravelGuide(object):
 		for curr_city in range(len(city_list_names)):
 			wg = WeatherGuide(city_list_names[curr_city])
 			wg.compute_aggregate_weather_information()
-			#print "Weather Guide " + str(curr_city) + " : " + str(wg.overall_cloud_percentage) + "  ,  " + str(wg.overall_humidity_percentage) + " , " + str(wg.overall_temperature) + " , "+ str(wg.overall_wind_speed)
 			city_weather.append(wg)
 
 		#After weather data is stored for each city, cities
