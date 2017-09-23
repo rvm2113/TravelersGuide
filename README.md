@@ -43,12 +43,16 @@ radius distance is specified by the user in km).
 
 
 <br />
+<br />
+<br />
 By using Elasticsearch's Python Search API, Traveler's Guide can construct a geo_shape
 given a series of traveler's addresses and multiple circles/geo_shapes for each "to be avoided"
 address. Traveler's Guide then carries out one geo_spatial query with an array of geo_shapes.
 This query finds all locations within the geo_shape of traveler's addresses and outside each of
 the geo_shapes constructed around all "to be avoided" addresses.
 
+<br />
+<br />
 <br />
 
 Once all eligible cities are found, historical 5-day, 3-hour weather data is obtained 
@@ -60,7 +64,9 @@ weather statistics and written to a file by rankings.
 
 # Output:
 The following output files are generated:
+<br />
 airports_near_destinations.txt (contains airports corresponding to each destination)
+<br />
 cities_near_travelers.txt (contains cities categorized by humidity, temperature,
 cloud_percentage, wind_speed)
 
