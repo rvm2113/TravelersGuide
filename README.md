@@ -13,6 +13,7 @@ JSON file of city locations<br />
 # Usage: 
 <br />
 (For Setup): 
+<br />
 python store_airports.py [Airport JSON file]<br />
 python create_entries.py [City JSON file]<br />
 
